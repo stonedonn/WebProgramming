@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>셀렉터 만들기</title>
+<style>
+	h3, li {color: brown;}
+	.warning {color: red;}
+	div.main {background:aliceblue;}
+	#list {background:mistyrose;}
+	div > strong {color:dodgerblue;}
+	ul strong {color:dodgerblue;}
+	input[type=text] {color:red;}
+	li:hover {background:yellowgreen;}
+	h3:first-letter {color:magenta;}
+</style>
+</head>
+<body class="main">
+	<h3>Web Programming</h3>
+	<hr>
+	<div>
+		<div class="main">2학기 <strong>학습 내용</strong></div>
+		<ul id="list">
+			<li>HTML5
+			<li><strong>CSS</strong>
+			<li>JAVASCRIPT
+		</ul>
+		<div class="warning">60점 이하는 F!</div>
+		<form>
+			이름 : <input type="text" value=""><br>
+			암호 : <input type="password" value="" maxlength="4"><br>
+			자소서 : <textarea cols="20" rows="5">이곳에 자기소개서를 작성</textarea>
+		</form>
+	</div>
+</body>
+</html>

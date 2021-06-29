@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>박스 모델</title>
+<style>
+span {
+	display: block;
+	width: 150px;
+	height: 50px;
+	background-color: deepskyblue;
+}
+
+
+div#color {
+	background: yellow;
+	border-style: solid;
+	border-color: Peru;
+}
+
+div.box {
+	width: 150px;
+	height: 50px;
+	padding: 20px;
+	border-width: 30px;
+	margin: 40px;
+}
+</style>
+</head>
+<body>
+	<div class="box" id="color">
+		<span>DIVDIVDIV</span>
+	</div>
+</body>
+</html>
+
+<!-- 마진은 내 기준으로 자식과의 거리
+패딩은 내 기준으로 부모와의 거리 -->
