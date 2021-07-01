@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>함수 스코프</title>
+</head>
+<body>
+<script>
+	"use strict"; //이거를 사용하면 웰컴함수가 중괄호를 벗어나는 순간 존재하지 않기 때문에 오류!
+ 	let age = prompt("나이를 알려주세요", 18);
+ 	let welcome;
+ 	if(age < 18) {
+ 		welcome = function() {
+ 			alert("안녕!");
+ 		};
+ 	} else {
+ 		welcome = function() {
+ 			alert("안녕하세요!");
+ 		};
+ 	}
+ 	
+ 	welcome();
+</script>
+</body>
+</html>

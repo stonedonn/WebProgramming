@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>객체 2</title>
+</head>
+<body>
+<script>
+	/* let user = {
+			name : "John",
+			age : 30,
+			isAdmin: true,
+	} */
+/* 	alert("age" in user);
+	alert("height" in user); //실시간으로 속성 값이 객체안에 있는지 확인할 수 있다 */
+	/* for (let key in user) {
+		alert(key);
+		alert(user[key]);       //반복문으로 객체값 돌려줌
+	} */
+	
+	//객체를 메서드로 이용
+	/* user.sayHi = function() {
+		alert("안녕하세요!");
+	};
+	user.sayHi(); */
+	
+	/* let user = {
+			sayHi: function() {
+				alert("안녕하세요!");
+			}
+	} */
+	
+	/* let user = {
+			sayHi() {
+				alert("안녕하세요!");
+			}
+	}
+	alert(user.sayHi()); */
+	
+	let user = {
+			name : "John",
+			age : 30,
+			sayHi() {
+				alert(this.name);
+			}
+	}
+	user.sayHi();
+</script>
+</body>
+</html>

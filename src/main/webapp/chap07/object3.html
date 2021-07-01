@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>생성자 함수</title>
+</head>
+<body>
+<script>
+	function User(name) { //관례적으로 객체로만드는 함수는 첫글자를 대문자로 만든다
+		//this = {}
+		this.name = name;
+		this.isAdmin = true;
+		// return this;
+	};
+	let user01 = new User("홍길동");
+	let user02 = new User("황선영");
+	let user03 = new User("이동현");
+	alert(user01.name);
+	alert(user02.name);
+</script>
+</body>
+</html>
+
+<!-- 자바 스크립트가 제공하는 코어 객체
+HTML DOM 객체
+브라우저 객체(BOM)
+ -->
